@@ -1,0 +1,181 @@
+#delete {
+  margin-left: 36px;
+  margin-bottom: 13px;
+  margin-top: 50px;
+  float: left;
+}
+#correctionBox {
+  float: left;
+  margin-top: 55px;
+  margin-left: 3px;
+}
+#correction {
+  float: left;
+  margin-top: 63px;
+  margin-left: -48px;
+}
+#date {
+  padding-top: 4vh;
+  font-weight: bolder;
+  color: #4c7343;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+#whiteBoxArea {
+  margin-left: 36px;
+}
+#whiteBox {
+  background-color: white;
+  width: 318px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px #d0d0d0;
+  overflow-y: scroll;
+}
+#whiteBox::-webkit-scrollbar {
+  display: none;
+}
+#whiteBoxContent {
+  width: 238px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+#boxDate {
+  color: #4c7343;
+  font-weight: bold;
+}
+
+#line {
+  width: 238px;
+  background-color: #bcbcbc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 4px 0px lightgray;
+}
+#content {
+  text-align: left;
+  font-size: 16px;
+  width: 238px;
+  border: none;
+  resize: none;
+}
+#content:focus {
+  outline: none;
+}
+#grayArea {
+  height: 448px;
+}
+#commentInput {
+  width: 300px;
+  height: 79px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
+#commentSave {
+  float: right;
+  margin-right: 20px;
+  margin-top: 50px;
+  width: 30px;
+  height: 30px;
+}
+#commentSave2 {
+  float: right;
+  margin-right: -23px;
+  margin-top: 58px;
+  width: 13.5px;
+  height: 13.5px;
+}
+#comment {
+  height: 120px;
+  margin-left: 36px;
+  margin-top: 23px;
+  text-align: left;
+}
+#count {
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px gray;
+}
+#commentBox {
+  background-color: white;
+  width: 318px;
+  height: 79px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px #d0d0d0;
+  margin-left: 35px;
+}
+#profile {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#name {
+  margin-left: 73px;
+  padding-top: 13px;
+  color: #4c7343;
+  font-weight: bolder;
+}
+#commentContent {
+  margin-left: 73px;
+}
+#scroll {
+  overflow-y: scroll;
+  width: 400px;
+  height: 440px;
+}
+#scroll::-webkit-scrollbar {
+  display: none;
+}
+#greenBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+#calender,
+#circle,
+#data,
+#shop,
+#logout {
+  position: absolute;
+  z-index: 1;
+}
+
+#input {
+  position: absolute;
+  z-index: 2;
+}
+
+#calender {
+  left: 70px;
+  top: 600px;
+}
+
+#circle {
+  left: 163px;
+  top: 600px;
+}
+#data {
+  top: 614px;
+  left: 256px;
+}
+#input {
+  left: 169px;
+  top: 605px;
+}
+#shop {
+  bottom: 4vh;
+  left: 4vh;
+}
+#logout {
+  width: 52px;
+  height: 25px;
+  color: #fffbd9;
+  background: #4c7343;
+  font-size: 12px;
+  bottom: 4vh;
+  right: 4vh;
+  padding-top: 5px;
+}

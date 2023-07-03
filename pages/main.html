@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>메인_타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #container {
+        max-width: 390px;
+        max-height: 844px;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        position: relative;
+        background-color: #f5f5f5;
+      }
+      * {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="grayArea">
+        <div id="date">2023년 XX월 XX일</div>
+        <div id="choice">
+          <img
+            src="/images/base.png"
+            id="base"
+            width="194px"
+            onclick="goToListPage()"
+          />
+          <img
+            src="/images/list0.png"
+            id="list"
+            width="41px"
+            onclick="goToListPage()"
+          />
+          <img src="/images/tile1.png" id="tile" width="100px" />
+        </div>
+        <div id="whiteBoxArea"></div>
+      </div>
+
+      <img src="/images/Rectangle 8.png" id="greenBox" width="390px" />
+      <div id="greenArea">
+        <img src="/images/calender.png" id="calender" />
+        <img src="/images/circle.png" id="circle" />
+        <img src="/images/input.png" id="input" onclick="goToInputPage()" />
+        <img src="/images/data.png" id="data" />
+        <img src="/images/shop.png" id="shop" />
+        <div id="logout" onclick="goToLoginPage()">로그아웃</div>
+      </div>
+    </div>
+    <script src="/script/main.js"></script>
+  </body>
+</html>

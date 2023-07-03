@@ -1,0 +1,116 @@
+#date {
+  padding-top: 4vh;
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px gray;
+  font-size: 16px;
+}
+#base {
+  position: relative;
+  left: -2px;
+  top: 20px;
+}
+#tile {
+  position: absolute;
+  top: 79px;
+  left: 136px;
+}
+#list {
+  position: absolute;
+  left: 189px;
+  top: 73px;
+}
+#whiteBoxArea {
+  padding-top: 5vh;
+  margin-left: 36px;
+}
+#whiteBox {
+  background-color: white;
+  width: 318px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px #d0d0d0;
+  overflow-y: scroll;
+}
+#whiteBox::-webkit-scrollbar {
+  display: none;
+}
+.whiteBoxContent {
+  padding-top: 13px;
+  padding-left: 13px;
+}
+.boxDate {
+  color: #4c7343;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  float: left;
+  width: 70%;
+  margin-left: 24px;
+  margin-bottom: 5px;
+}
+.count {
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px gray;
+  float: left;
+  width: 20%;
+}
+.line {
+  width: 260px;
+  background-color: #bcbcbc;
+}
+
+#grayArea {
+  height: 548px;
+}
+#greenBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#calender,
+#circle,
+#data,
+#shop,
+#logout {
+  position: absolute;
+  z-index: 1;
+}
+
+#input {
+  position: absolute;
+  z-index: 2;
+}
+
+#calender {
+  left: 70px;
+  top: 600px;
+}
+
+#circle {
+  left: 163px;
+  top: 600px;
+}
+#data {
+  top: 614px;
+  left: 256px;
+}
+#input {
+  left: 169px;
+  top: 605px;
+}
+#shop {
+  bottom: 4vh;
+  left: 4vh;
+}
+#logout {
+  width: 52px;
+  height: 25px;
+  color: #fffbd9;
+  background: #4c7343;
+  font-size: 12px;
+  bottom: 4vh;
+  right: 4vh;
+  padding-top: 5px;
+}

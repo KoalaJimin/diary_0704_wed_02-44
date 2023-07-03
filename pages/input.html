@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>일기작성</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #container {
+        max-width: 390px;
+        max-height: 844px;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        position: relative;
+        background-color: #f5f5f5;
+      }
+      * {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/input.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="grayArea">
+        <div id="whiteBoxArea">
+          <div id="whiteBox">
+            <div id="whiteBoxContent">
+              <div id="date"></div>
+              <hr id="line" />
+              <img src="/images/graypic.png" id="img" width="240px" />
+              <textarea id="content"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="/images/Rectangle 8.png" id="greenBox" width="390px" />
+      <div id="greenArea">
+        <img src="/images/circle.png" id="circle" onclick="saveDiary()" />
+        <img src="/images/save.png" id="save" onclick="saveDiary()" />
+        <img src="/images/image.png" id="image" width="43px" />
+      </div>
+    </div>
+    <script src="/script/input.js"></script>
+  </body>
+</html>
