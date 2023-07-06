@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let box = document.createElement("div");
     box.classList.add("whiteBox");
 
-    let content = document.createElement("div");
-    content.classList.add("whiteBoxContent");
+    /*let content = document.createElement("div");
+    box.classList.add("content");*/
 
     let date = document.createElement("div");
     date.textContent = memos[i].date;
@@ -68,10 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     count.textContent = "(" + commentCount + ")";
     count.classList.add("count");
 
-    let line = document.createElement("div");
-    line.classList.add("line");
-
-    box.append(content, date, count, line);
+    box.append(date, count);
     whiteBox.append(box);
     elements.append(whiteBox);
   }

@@ -1,3 +1,4 @@
+<!--0704회의하면서 수정한 ver-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,32 +57,38 @@
             </div>
           </div>
 
-          <form id="comment" method="get">
-            <div id="count"></div>
-            <input type="text" id="commentInput" />
-            <!-- 주석처리는 제출버튼을 투명화하는 css입니다.
-            투명화한 제출버튼을 밑에 있는 이미지에 겹쳐서 이미지가 보이게 할 거예요. (img에 submit 적용이 안되더라구요)
-            css 마무리 되면 주석 풀고 적용시키면 됩니다. -->
-            <input type="submit" />
-            <!-- style="opacity: 0; background: none; border: none; cursor: pointer;" -->
-
-            <img
-              src="/images/Send Button.png"
-              id="commentSave"
-              onclick="saveComment()"
-            />
-          </form>
+          <div id="chatText">댓글(<span id="commentCount"></span>)</div>
+          <div id="comment">
+            <div id="commentInput">
+              <input type="text" id="writeInput" />
+              <div id="commentSave" onclick="saveComment()">
+                <img
+                  src="/images/Send Button.png"
+                  width="30px;"
+                  height="30px;"
+                />
+              </div>
+            </div>
+          </div>
           <div id="commentBoxArea"></div>
         </div>
       </div>
     </div>
-    <img src="/images/Rectangle 8.png" id="greenBox" width="390px" />
-    <div id="greenArea">
-      <img src="/images/calender.png" id="calender" />
-      <img src="/images/circle.png" id="circle" />
-      <img src="/images/input.png" id="input" />
-      <img src="/images/data.png" id="data" />
-      <img src="/images/shop.png" id="shop" />
+    <div id="underNavigation">
+      <span id="calender">
+        <img src="/images/calender.png" alt="달력" width="65px" height="65px" />
+      </span>
+      <span>
+        <button id="home">
+          <img src="/images/input.png" alt="홈" width="60px" height="60px" />
+        </button>
+      </span>
+      <span id="graph">
+        <img src="/images/data.png" alt="그래프" width="40px" height="40px" />
+      </span>
+      <div id="shop">
+        <img src="/images/shop.png" alt="마켓" width="30px" height="30px" />
+      </div>
       <div id="logout" onclick="goToLoginPage()">로그아웃</div>
     </div>
   </body>

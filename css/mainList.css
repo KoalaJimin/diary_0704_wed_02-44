@@ -5,35 +5,36 @@
   font-size: 16px;
 }
 #base {
-  position: relative;
-  left: -2px;
-  top: 20px;
+  margin-top: 20px;
 }
 #tile {
   position: absolute;
-  top: 79px;
-  left: 136px;
+  margin-top: 25px;
+  margin-left: -154px;
 }
 #list {
   position: absolute;
-  left: 189px;
-  top: 73px;
+  margin-left: -102px;
+  margin-top: 20px;
 }
 #whiteBoxArea {
-  padding-top: 5vh;
-  margin-left: 36px;
+  position: relative;
+  padding: 10px;
+  margin: auto;
 }
 #whiteBox {
   background-color: white;
   width: 318px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 0 0px 20px #d0d0d0;
   overflow-y: scroll;
+  margin: auto;
 }
 #whiteBox::-webkit-scrollbar {
   display: none;
 }
+
 .whiteBoxContent {
   padding-top: 13px;
   padding-left: 13px;
@@ -47,6 +48,13 @@
   width: 70%;
   margin-left: 24px;
   margin-bottom: 5px;
+}
+.whiteBox {
+  width: 280px;
+  height: 30px;
+  position: relative;
+  margin: auto;
+  border-bottom: 2px solid #ccc;
 }
 .count {
   font-weight: bolder;
@@ -62,55 +70,58 @@
 #grayArea {
   height: 548px;
 }
-#greenBox {
+#underNavigation {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-#calender,
-#circle,
-#data,
-#shop,
-#logout {
-  position: absolute;
-  z-index: 1;
-}
-
-#input {
-  position: absolute;
-  z-index: 2;
+  background-color: #aad6a0;
+  width: 390px;
+  height: 189.48px;
+  box-shadow: 5px -5px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #calender {
-  left: 70px;
-  top: 600px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
-#circle {
-  left: 163px;
-  top: 600px;
+#home {
+  border-radius: 50%;
+  background-color: #fffbd9;
+  border: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#data {
-  top: 614px;
-  left: 256px;
+
+#graph {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
 }
-#input {
-  left: 169px;
-  top: 605px;
-}
+
 #shop {
-  bottom: 4vh;
-  left: 4vh;
+  position: absolute;
+  top: 85%;
+  left: 8%;
+  transform: translate(-50%, -50%);
 }
+
 #logout {
   width: 52px;
   height: 25px;
   color: #fffbd9;
   background: #4c7343;
   font-size: 12px;
-  bottom: 4vh;
-  right: 4vh;
-  padding-top: 5px;
+  position: absolute;
+  top: 85%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

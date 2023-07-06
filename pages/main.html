@@ -52,13 +52,26 @@
         <div id="whiteBoxArea"></div>
       </div>
 
-      <img src="/images/Rectangle 8.png" id="greenBox" width="390px" />
-      <div id="greenArea">
-        <img src="/images/calender.png" id="calender" />
-        <img src="/images/circle.png" id="circle" />
-        <img src="/images/input.png" id="input" onclick="goToInputPage()" />
-        <img src="/images/data.png" id="data" />
-        <img src="/images/shop.png" id="shop" />
+      <div id="underNavigation">
+        <span id="calender">
+          <img
+            src="/images/calender.png"
+            alt="달력"
+            width="65px"
+            height="65px"
+          />
+        </span>
+        <span>
+          <button id="home" onclick="goToInputPage()">
+            <img src="/images/input.png" alt="홈" width="60px" height="60px" />
+          </button>
+        </span>
+        <span id="graph">
+          <img src="/images/data.png" alt="그래프" width="40px" height="40px" />
+        </span>
+        <div id="shop">
+          <img src="/images/shop.png" alt="마켓" width="30px" height="30px" />
+        </div>
         <div id="logout" onclick="goToLoginPage()">로그아웃</div>
       </div>
     </div>
