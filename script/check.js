@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // 현재 URL에서 쿼리 매개변수를 가져와 memoId 변수에 할당
   const urlParams = new URLSearchParams(window.location.search);
   const memoId = urlParams.get("id");
   console.log(memoId);
 
+  // 세션 스토리지에서 "memos"라는 키로 저장된 데이터를 가져와 memos 변수에 할당
   let memos = JSON.parse(sessionStorage.getItem("memos")) || [];
 
+  // memos.forEach를 사용하여 memos 배열을 반복하면서 memo.id.toString() === memoId 조건을 만족하는 메모를 찾기
   memos.forEach((memo) => {
     if (memo.id.toString() === memoId) {
       document.getElementById("date").textContent = memo.date;
@@ -13,10 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// 메모를 수정하고 수정 버트늘 클릭했을 때 호출
 function correctionContent() {
+  // 현재 URL에서 쿼리 매개변수를 가져와 memoId 변수에 할당
   const urlParams = new URLSearchParams(window.location.search);
   const memoId = urlParams.get("id");
 
+  // 세션 스토리지에서 "memos"라는 키로 저장된 데이터를 가져와 memos 변수에 할당
   let memos = JSON.parse(sessionStorage.getItem("memos")) || [];
 
   memos.forEach((memo) => {
@@ -28,6 +34,7 @@ function correctionContent() {
   });
 }
 
+// 삭제
 function deleteContent() {
   const urlParams = new URLSearchParams(window.location.search);
   const memoId = urlParams.get("id");
